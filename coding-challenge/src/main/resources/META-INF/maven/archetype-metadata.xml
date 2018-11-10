@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="basic">
+	<requiredProperties>
+		<requiredProperty key="groupId">
+			<defaultValue>de.engehausen</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="version">
+			<defaultValue>0.1.0-SNAPSHOT</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="package">
+			<defaultValue>IGNORED</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="packageName">
+			<defaultValue>IGNORED</defaultValue>
+		</requiredProperty>
+	</requiredProperties>
+	<fileSets>
+		<fileSet filtered="true" packaged="false">
+			<directory>src/main/java</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="false">
+			<directory>src/test/java</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="false">
+			<directory>src/main/resources</directory>
+			<includes>
+				<include>**/*</include>
+			</includes>
+		</fileSet>
+	</fileSets>	
+</archetype-descriptor>
